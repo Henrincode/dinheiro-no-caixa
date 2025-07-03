@@ -11,7 +11,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  padding-top: 40px;
   background-color: #023047;
 
   font-family: "Poppins";
@@ -37,16 +38,9 @@ h1 {
   font-weight: bold;
 }
 
-.cabecalho {
-  border-bottom: solid 2px #074c6e;
-}
-
-.cabecalho .espaco {
-  flex: 1;
-}
-
 .cabecalho,
-.nota {
+.nota,
+.rodape {
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -54,6 +48,28 @@ h1 {
 
   margin: 10px;
 }
+
+.cabecalho {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px #074c6e;
+}
+
+.rodape {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: solid 2px #074c6e;
+}
+
+.rodape p {
+  flex: 1;
+}
+
+.cabecalho .espaco,
+.rodape .espaco {
+  flex: 1;
+}
+
 
 .nota input {
   /* flex: 1; */
@@ -76,7 +92,8 @@ h1 {
 
 .cabecalho p,
 .nota label,
-.nota p {
+.nota p,
+.rodape p {
   min-width: 100px;
   /* width: 100%; */
   color: white;
