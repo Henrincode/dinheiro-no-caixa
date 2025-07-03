@@ -1,28 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Dinheiro no Caixa</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <img src="https://img.icons8.com/?size=100&id=43141&format=png&color=000000" alt="">
-        <h1>Dinheiro no Caixa</h1>
+      <img
+        src="https://img.icons8.com/?size=100&id=43141&format=png&color=000000"
+        alt=""
+      />
+      <h1>Dinheiro no Caixa</h1>
     </header>
 
     <main>
-
+      <div class="cabecalho">
+        <p>NOTAS</p>
+        <div class="espaco"></div>
+        <p>TOTAL</p>
+      </div>
+      <div class="nota">
+        <label for="rs2">R$02,00</label>
+        <input type="hidden" value="2" />
+        <input type="number" max="2" name="" id="rs2" />
+        <p>R$--</p>
+      </div>
+      <div class="nota">
+        <label for="rs5">R$05,00</label>
+        <input type="hidden" value="5" />
+        <input type="number" max="1000" name="" id="rs5" />
+        <p>R$--</p>
+      </div>
+      <div class="nota">
+        <label for="rs10">R$10,00</label>
+        <input type="hidden" value="10" />
+        <input type="number" max="1000" name="" id="rs10" />
+        <p>R$--</p>
+      </div>
+      <div class="nota">
+        <label for="rs20">R$20,00</label>
+        <input type="hidden" value="20" />
+        <input type="number" max="1000" name="" id="rs20" />
+        <p>R$--</p>
+      </div>
+      <div class="nota">
+        <label for="rs50">R$50,00</label>
+        <input type="hidden" value="50" />
+        <input type="number" max="1000" name="" id="rs50" />
+        <p>R$--</p>
+      </div>
+      <div class="nota">
+        <label for="rs100">R$100,00</label>
+        <input type="hidden" value="100" />
+        <input type="number" max="1000" name="" id="rs100" />
+        <p>R$--</p>
+      </div>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
